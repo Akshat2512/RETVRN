@@ -17,7 +17,11 @@
         "backgroundColor": "#000000"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.akshat2512.Retvrn"
+      "package": "com.akshat2512.Retvrn",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -42,16 +46,22 @@
       ],
       [
         "@siteed/expo-audio-studio",
-                {
-                    "enablePhoneStateHandling": true,
-                    "enableNotifications": true,
-                    "enableBackgroundAudio": true,
-                    "enableDeviceDetection": true
-                }
+        {
+          "enablePhoneStateHandling": true,
+          "enableNotifications": true,
+          "enableBackgroundAudio": true,
+          "enableDeviceDetection": true
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8edd1a6d-47ff-4786-a6de-69a6ca01c921"
+      }
     }
   }
 }
